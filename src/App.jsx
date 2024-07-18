@@ -1,11 +1,6 @@
 import "./App.css";
 import "./index.css";
-import backgroundPatternDesktop from "./assets/background-pattern-desktop.svg";
-import backgroundPatternMobile from "./assets/background-pattern-mobile.svg";
-import iconMinus from "./assets/icon-minus.svg";
-import iconPlus from "./assets/icon-plus.svg";
-import iconStar from "./assets/icon-star.svg";
-import Accordian from "./components/Accordian";
+import Accordian from "./components/Accordian.jsx"
 
 function App() {
   return (
