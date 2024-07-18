@@ -6,11 +6,11 @@
 .image-background {
     background-image: url('./assets/background-pattern-desktop.svg');
     background-size: cover;
-    height: 50vh;
+    height: 30vh;
 }
 
 .color-background {
     background-color:hsl(275, 100%, 97%);
     flex-grow: 1;
-    height: 50vh;
+    height: 100vh;
 }
