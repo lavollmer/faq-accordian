@@ -9,6 +9,9 @@ export default {
         "grayish-purple": "292, 16%, 49%",
         "dark-purple": "292, 42%, 14%",
       },
+      font: {
+        worksans: ["Work Sans", "sans-serif"],
+      }
     },
   },
   plugins: [],
