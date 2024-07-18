@@ -64,6 +64,7 @@ Use this section to recap over some of your major learnings while working throug
 ### Useful resources
 
 - [Google Fonts] (https://fonts.google.com/)
+- [FAQ accordian Flowbite] (https://flowbite.com/docs/components/accordion/)
 
 
 ## Author
