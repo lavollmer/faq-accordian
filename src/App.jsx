@@ -9,8 +9,14 @@ function App() {
   return (
     <>
       <div>
-        <img className="bg-cover" src={backgroundPatternDesktop} alt="background pattern desktop" />
-        <div></div>
+        <img
+          className="bg-cover"
+          src={backgroundPatternDesktop}
+          alt="background pattern desktop"
+        />
+        <div className="bg-grayish-purple">
+          <h1>Hello</h1>
+        </div>
       </div>
     </>
   );
