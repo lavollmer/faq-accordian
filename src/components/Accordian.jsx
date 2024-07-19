@@ -1,9 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import iconStar from "../assets/icon-star.svg";
 import iconPlus from "../assets/icon-plus.svg";
 import iconMinus from "../assets/icon-minus.svg";
 
 const Accordian = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="flex flex-col bg-white font-worksans">
       <div className="flex flex-row justify-start">
@@ -26,23 +33,8 @@ const Accordian = () => {
             <span className="text-dark-purple">
               What is Frontend Mentor, and how will it help me?
             </span>
-            {/* <svg
-              data-accordion-icon
-              className="w-3 h-3 rotate-180 shrink-0"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            > */}
-              <img src={iconPlus} alt="plus icon" />
-              {/* <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5 5 1 1 5"
-              />
-            </svg> */}
+
+            <img src={iconPlus} alt="plus icon" onClick={toggleAccordion} />
           </button>
         </h2>
         <div
@@ -69,7 +61,6 @@ const Accordian = () => {
           >
             <span className="text-dark-purple">Is Frontend Mentor free?</span>
             <img src={iconPlus} alt="plus icon" />
-
           </button>
         </h2>
         <div
@@ -83,7 +74,6 @@ const Accordian = () => {
               challenges, with the free option providing access to a range of
               projects suitable for all skill levels.
             </p>
-
           </div>
         </div>
         <h2 id="accordion-collapse-heading-3">
