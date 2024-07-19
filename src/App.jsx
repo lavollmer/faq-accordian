@@ -43,18 +43,23 @@ function App() {
             <h1 className="font-bold text-dark-purple text-3xl md:text-4xl">FAQS</h1>
           </div>
           <div className="flex flex-col gap-4">
+            {/* iterates over each item in the data array - for each item the function returns JSX */}
             {data.map((item) => (
+              // key prop is required for each child in a list
               <div key={item.id}>
                 <div className="flex justify-between p-2 hover:text-purple-600 items-center">
                   <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2 cursor-pointer">
                     {item.intro}
                   </h1>
+                  {/* image to serve as button to toggle active state */}
                   <img
                     src={active === item.id ? iconMinus : iconPlus}
                     alt="icon"
                     className="w-6 h-6 cursor-pointer"
+                    // onClick event handler to toggle active state
                     onClick={() => active === item.id ? setActive(0) : setActive(item.id)}/>
                 </div>
+                {/* conditional rendering block that checks if the current item is the active one */}
                 {active === item.id ? (
                   <p className="text-gray-500 dark:text-gray-400">{item.pg}</p>
                 ) : (
