@@ -1,16 +1,19 @@
 .background-container {
     display:flex;
     flex-direction:column;
+    position: relative;
 }
 
 .image-background {
     background-image: url('./assets/background-pattern-desktop.svg');
     background-size: cover;
     height: 30vh;
+    position: relative;
 }
 
 .color-background {
     background-color:hsl(275, 100%, 97%);
     flex-grow: 1;
     height: 100vh;
+    position: relative;
 }
