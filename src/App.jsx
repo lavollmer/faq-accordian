@@ -2,9 +2,10 @@ import "./App.css";
 import "./index.css";
 import React from "react";
 import { useState } from "react";
-import iconStar from "../assets/icon-star.svg";
-import iconPlus from "../assets/icon-plus.svg";
-import iconMinus from "../assets/icon-minus.svg";
+import iconStar from "./assets/icon-star.svg";
+import iconPlus from "./assets/icon-plus.svg";
+import iconMinus from "./assets/icon-minus.svg";
+import backgroundPattern from "./assets/background-pattern-desktop.svg";
 
 function App() {
   const [isOpen, setIsOpen] = useState(0);
@@ -34,7 +35,15 @@ function App() {
 
   return (
     <>
-      <div></div>
+      <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-light-pink font-worksans">
+        <img src={backgroundPattern} alt="icon star" className="h[250px] object-cover w-[100vw] absolute z-0 top-0"/>
+      <div>
+        <div>
+          <img src={iconStar} alt="avatar" className="rounded-full h-20 w-20" />
+          <h1 className="font-bold text-dark-purple text-4xl">FAQS</h1>
+        </div>
+      </div>
+      </div>
     </>
   );
 }
