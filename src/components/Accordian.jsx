@@ -12,6 +12,7 @@ const Accordian = () => {
       ...prevState,
       [openId]: !prevState[openId],
     }));
+    console.log(isOpen);
   };
 
   return (
@@ -37,14 +38,13 @@ const Accordian = () => {
             <span className="text-dark-purple">
               What is Frontend Mentor, and how will it help me?
             </span>
-
-            <img src={iconPlus} alt="plus icon" onClick={toggleAccordion} />
+            <img src={iconPlus} alt="plus icon" />
           </button>
         </h2>
         <div
           id="accordion-collapse-body-1"
-          className="hidden"
           aria-labelledby="accordion-collapse-heading-1"
+          className={`accordion-collapse collapse ${isOpen["open1"] ? "show" : ""}`}
         >
           <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
             <p className="mb-2 text-gray-500 dark:text-gray-400">
