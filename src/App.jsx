@@ -10,7 +10,7 @@ import backgroundPattern from "./assets/background-pattern-desktop.svg";
 function App() {
   const [isOpen, setIsOpen] = useState(0);
 
-  const info = [
+  const data = [
     {
       intro: "What is Frontend Mentor, and how will it help me?",
       pg: "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.",
@@ -32,7 +32,6 @@ function App() {
       id: 4,
     },
   ];
-
 
   return (
     <>
