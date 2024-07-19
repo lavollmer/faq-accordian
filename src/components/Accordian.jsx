@@ -11,7 +11,7 @@ const Accordian = () => {
         />
         <h1 className="font-bold text-dark-purple text-4xl">FAQS</h1>
       </div>
-      <div id="accordion-collapse" data-accordion="collapse">
+      <div id="accordion-collapse" data-accordion="collapse" className="font-worksans">
         <h2 id="accordion-collapse-heading-1">
           <button
             type="button"
@@ -20,7 +20,7 @@ const Accordian = () => {
             aria-expanded="true"
             aria-controls="accordion-collapse-body-1"
           >
-            <span>What is Flowbite?</span>
+            <span>What is Frontend Mentor, and how will it help me?</span>
             <svg
               data-accordion-icon
               className="w-3 h-3 rotate-180 shrink-0"
@@ -46,9 +46,7 @@ const Accordian = () => {
         >
           <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
             <p className="mb-2 text-gray-500 dark:text-gray-400">
-              Flowbite is an open-source library of interactive components built
-              on top of Tailwind CSS including buttons, dropdowns, modals,
-              navbars, and more.
+            Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
             </p>
             <p className="text-gray-500 dark:text-gray-400">
               Check out this guide to learn how to{" "}
@@ -71,7 +69,7 @@ const Accordian = () => {
             aria-expanded="false"
             aria-controls="accordion-collapse-body-2"
           >
-            <span>Is there a Figma file available?</span>
+            <span>Is Frontend Mentor free?</span>
             <svg
               data-accordion-icon
               className="w-3 h-3 rotate-180 shrink-0"
@@ -97,9 +95,7 @@ const Accordian = () => {
         >
           <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
             <p className="mb-2 text-gray-500 dark:text-gray-400">
-              Flowbite is first conceptualized and designed using the Figma
-              software so everything you see in the library has a design
-              equivalent in our Figma file.
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.
             </p>
             <p className="text-gray-500 dark:text-gray-400">
               Check out the{" "}
@@ -123,7 +119,7 @@ const Accordian = () => {
             aria-controls="accordion-collapse-body-3"
           >
             <span>
-              What are the differences between Flowbite and Tailwind UI?
+            Can I use Frontend Mentor projects in my portfolio?
             </span>
             <svg
               data-accordion-icon
@@ -150,11 +146,7 @@ const Accordian = () => {
         >
           <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
             <p className="mb-2 text-gray-500 dark:text-gray-400">
-              The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
+            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!
             </p>
             <p className="mb-2 text-gray-500 dark:text-gray-400">
               However, we actually recommend using both Flowbite, Flowbite Pro,
