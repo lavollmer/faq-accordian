@@ -31,7 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![FAQ Accordion](./src/assets/FAQaccordion.png)
+
+![FAQ Accordion Dropdown](./src/assets/FAQaccordiondisplay.png)
+
+![FAQ Accordion Dropdown](./src/assets/FAQaccordiondisplay2.png)
 
 
 ### Links

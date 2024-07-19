@@ -10,6 +10,7 @@ import backgroundPattern from "./assets/background-pattern-desktop.svg";
 function App() {
   const [active, setActive] = useState(false);
 
+  //array of data to be displayed in the FAQ section
   const data = [
     {
       intro: "What is Frontend Mentor, and how will it help me?",
