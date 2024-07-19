@@ -5,10 +5,13 @@ import iconPlus from "../assets/icon-plus.svg";
 import iconMinus from "../assets/icon-minus.svg";
 
 const Accordian = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState({});
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
+  const toggleAccordion = (openId) => {
+    setIsOpen((prevState) => ({
+      ...prevState,
+      [openId]: !prevState[openId],
+    }));
   };
 
   return (
@@ -27,8 +30,9 @@ const Accordian = () => {
             type="button"
             className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
             data-accordion-target="#accordion-collapse-body-1"
-            aria-expanded="true"
+            aria-expanded={isOpen["open1"] || false}
             aria-controls="accordion-collapse-body-1"
+            onClick={() => toggleAccordion("open1")} // Use section ID
           >
             <span className="text-dark-purple">
               What is Frontend Mentor, and how will it help me?
