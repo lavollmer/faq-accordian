@@ -33,16 +33,39 @@ function App() {
     },
   ];
 
+
   return (
     <>
       <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-light-pink font-worksans">
-        <img src={backgroundPattern} alt="icon star" className="h[250px] object-cover w-[100vw] absolute z-0 top-0"/>
-      <div>
-        <div>
-          <img src={iconStar} alt="avatar" className="rounded-full h-20 w-20" />
-          <h1 className="font-bold text-dark-purple text-4xl">FAQS</h1>
+        <img src={backgroundPattern} alt="icon star" className="h-[250px] object-cover w-[100vw] absolute z-0 top-0"/>
+        <div className="w-[400px] md:max-w-[600px] md:w-auto z-10 rounded-lg flex flex-col p-3 text-dark-purple bg-white">
+          <div className="flex items-center my-4">
+            <img src={iconStar} alt="avatar" className="rounded-full h-20 w-20" />
+            <h1 className="font-bold text-dark-purple text-3xl md:text-4xl">FAQS</h1>
+          </div>
+          <div className="flex flex-col gap-4">
+            {data.map((item) => (
+              <div key={item.id}>
+                <div className="flex justify-between p-2 hover:text-purple-600 items-center">
+                  <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2 cursor-pointer">
+                    {item.intro}
+                  </h1>
+                  <img
+                    src={active === item.id ? iconMinus : iconPlus}
+                    alt="icon"
+                    className="w-6 h-6 cursor-pointer"
+                    onClick={() => active === item.id ? setActive(0) : setActive(item.id)}/>
+                </div>
+                {active === item.id ? (
+                  <p className="text-gray-500 dark:text-gray-400">{item.pg}</p>
+                ) : (
+                  <p></p>
+                )}
+                <hr />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
