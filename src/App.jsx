@@ -8,7 +8,7 @@ import iconMinus from "./assets/icon-minus.svg";
 import backgroundPattern from "./assets/background-pattern-desktop.svg";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [active, setActive] = useState(false);
 
   const data = [
     {
