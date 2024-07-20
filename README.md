@@ -1,6 +1,6 @@
 # FAQ accordion
 
-This project was aimed at learning about faq accordian structure and styling layout.
+This project was aimed at learning about faq accordian structure and styling layout in ReactJS, TailwindCSS, and others.
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -12,8 +12,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -41,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify FAQ Website](https://faq-lavol.netlify.app/)
 
 ## My process
 
@@ -56,13 +54,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-
-### Continued development
 
 
 ### Useful resources
