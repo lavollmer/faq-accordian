@@ -1,3 +1,4 @@
+//importing CSS files and images into React component
 import "./App.css";
 import "./index.css";
 import React from "react";
@@ -8,9 +9,10 @@ import iconMinus from "./assets/icon-minus.svg";
 import backgroundPattern from "./assets/background-pattern-desktop.svg";
 
 function App() {
+  //initializes a state variable named "active" and a function to update it as "setActive" using the useState hook, intial value is set to false
   const [active, setActive] = useState(false);
 
-  //array of data to be displayed in the FAQ section
+  //array of data to be displayed in the FAQ section that contains objects
   const data = [
     {
       intro: "What is Frontend Mentor, and how will it help me?",
@@ -34,6 +36,7 @@ function App() {
     },
   ];
 
+  //returns the JSX structure of the component
   return (
     <>
       <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-light-pink font-worksans">
