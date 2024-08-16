@@ -2,8 +2,6 @@
 
 This project was aimed at learning about faq accordian structure and styling layout in ReactJS, TailwindCSS, and others.
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -38,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Netlify FAQ Website](https://faq-lavol.netlify.app/)
+- Solution URL: [Laura Dev Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz/hub?share=true)
 
 ## My process
 
@@ -61,7 +59,6 @@ Users should be able to:
 - [Google Fonts] (https://fonts.google.com/)
 - [FAQ accordian Flowbite] (https://flowbite.com/docs/components/accordion/)
 - [TailwindCSS Background Images] (https://v1.tailwindcss.com/docs/background-size)
-
 
 ## Author
 
